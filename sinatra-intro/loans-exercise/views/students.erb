@@ -1,0 +1,19 @@
+<%if student == nil%>
+    <p>Eleven skaffa vingar och flög iväg </p>
+<%else%>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Namn</th>
+            <th>Personnummer</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <%= student[0] %> </td>
+                <td> <%= student[1] %> </td>
+                <td> <%= student[2] %> </td>
+            </tr>
+        </tbody>
+    </table>
+<%end%>
+<a href="/">Tillbaka</a>

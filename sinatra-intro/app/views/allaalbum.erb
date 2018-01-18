@@ -1,0 +1,35 @@
+ <table>
+        <thead>
+            <th>ID</th>
+            <th>titel</th>
+            <th>artist</th>
+        </thead>
+        <tbody>
+        <% albumlist = result2%>
+        <% idlist = result%>
+        <% alist = result3%>
+        <% i = 0%>
+        <% while i < idlist.length %>
+            <tr>
+                <th>
+                 <%= idlist[i][0] %>
+                </th>
+                <th>
+                    <%= albumlist[i][0] %>
+                </th>
+                <th>
+                 <%= alist[i][0] %> 
+                </th>
+                <% i += 1%>
+                <% end %>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/">Tillbaka</a>
+
+ 
+
+
+
+ 

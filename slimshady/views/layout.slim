@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        meta charset="utf-8"
+        title Just do it
+        link rel="stylesheet" media="screen, projection" href="./css/style.css"
+        /[if lt IE 9]
+            /script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
+    body
+        h1 Slimsalabim!
+        - bananpaj = "Jättegott"
+        p.min_klass 
+            = bananpaj
+        hr
+        h1#mitt_id
+            | Här kommer innehållet i yield:
+        /yield visar innehåller i index
+        == yield
+        hr
+        h1 Detta är efter "yield"
+        p   
+            |
+                Lite.    Lite till.
+                Något.   Något mer!
+            Mycket.      Mycket mer?
+        /! En html kommentar
+        /En kodkommentar
+
+
+
+
+                
+            
+                
